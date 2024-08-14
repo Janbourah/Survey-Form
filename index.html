@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lanf="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">description</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Info</legend>
+      <label id="name-label" for=:name>Enter your name: <input type="text" id="name" required placeholder="Please enter your full name"></label>
+      <label id="email-label" for="email">Enter your email: <input type="email" id="email" required placeholder="Please enter a valid email"></label>
+      <label id="number-label" for="number">Enter your naumber: <input type="number" id="number" min="1" max="99" placeholder="Put your number with the country code"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="dropdown">
+      <select id="dropdown">
+        <option>male</option>
+        <option>female</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Football or Basketball</legend>
+      <label for="football">Football<input type="radio" name="sport" value="s1" id="football" class="inline"></label>
+      <label for="basketball">Basketball<input type="radio" name="sport" value="s2" id="basketball" class="inline">
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Approval</legend>
+      <label for="terms"><input type="checkbox" value="check" id="terms" required class="inline">I read</label>
+      <label for="terms"><input type="checkbox" value="check" id="terms" required class="inline">I agree</label>
+      <label for="terms"><input type="checkbox" value="check" id="terms" required class="inline">I approve</label>
+      </fieldset>
+      <fieldset>
+        <legend> What's wrong</legend>
+        <label for="thoughts"> Please tell as what is your complain.
+      <textarea id="thoughts" placeholder="What's on your mind?"></textarea></label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>  
